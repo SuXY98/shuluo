@@ -1,0 +1,14 @@
+[Inputs]
+clk
+vs
+reset
+=keyboard[9:0]=
+=x[9:0]=
+=y[8:0]=
+[Outputs]
+stop
+=RGB[11:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Main
+

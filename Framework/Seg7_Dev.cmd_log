@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/Framework/Seg7_Dev.xst" -ofn "E:/Framework/Seg7_Dev.syr" 

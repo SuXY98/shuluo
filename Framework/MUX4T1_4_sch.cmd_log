@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -refsym MUX4T1_4_sch E:/Framework/MUX4T1_4_sch.sch E:/Framework/MUX4T1_4_sch.sym 

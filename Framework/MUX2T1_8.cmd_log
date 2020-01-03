@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "E:/Framework/MUX2T1_8.xst" -ofn "E:/Framework/MUX2T1_8.syr" 
+xst -intstyle ise -ifn "E:/Framework/MUX2T1_8.xst" -ofn "E:/Framework/MUX2T1_8.syr" 
+vhdtdtfi -lib work E:/Framework/MUX2T1_8.v -lang verilog -prj Framework -o MUX2T1_8.spl -module MUX2T1_8 -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 MUX2T1_8.spl E:/Framework/MUX2T1_8.sym 

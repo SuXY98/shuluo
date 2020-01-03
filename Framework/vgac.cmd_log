@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/Framework/vgac.v -lang verilog -prj Framework -o vgac.spl -module vgac -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 vgac.spl E:/Framework/vgac.sym 

@@ -1,0 +1,918 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: Main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Main.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Main"
+Output Format                      : NGC
+Target Device                      : xc7k160t-2L-ffg676
+
+---- Source Options
+Top Module Name                    : Main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\Framework\ipcore_dir\youwin.v" into library work
+Parsing module <youwin>.
+Analyzing Verilog file "E:\Framework\ipcore_dir\tortoise_left.v" into library work
+Parsing module <tortoise_left>.
+Analyzing Verilog file "E:\Framework\ipcore_dir\tortoise.v" into library work
+Parsing module <tortoise>.
+Analyzing Verilog file "E:\Framework\ipcore_dir\stab.v" into library work
+Parsing module <stab>.
+Analyzing Verilog file "E:\Framework\ipcore_dir\kid_right.v" into library work
+Parsing module <kid_right>.
+Analyzing Verilog file "E:\Framework\ipcore_dir\kid_left.v" into library work
+Parsing module <kid_left>.
+Analyzing Verilog file "E:\Framework\ipcore_dir\gameover.v" into library work
+Parsing module <gameover>.
+Analyzing Verilog file "E:\Framework\ipcore_dir\flag.v" into library work
+Parsing module <flag>.
+Analyzing Verilog file "E:\Framework\ipcore_dir\diamond.v" into library work
+Parsing module <diamond>.
+Analyzing Verilog file "E:\Framework\ipcore_dir\cannonball.v" into library work
+Parsing module <cannonball>.
+Analyzing Verilog file "E:\Framework\ipcore_dir\cannon.v" into library work
+Parsing module <cannon>.
+Analyzing Verilog file "E:\Framework\ipcore_dir\brick.v" into library work
+Parsing module <brick>.
+Analyzing Verilog file "E:\Framework\Main.v" into library work
+Parsing module <Main>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Main>.
+WARNING:HDLCompiler:413 - "E:\Framework\Main.v" Line 84: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "E:\Framework\Main.v" Line 85: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "E:\Framework\Main.v" Line 86: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "E:\Framework\Main.v" Line 87: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "E:\Framework\Main.v" Line 88: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "E:\Framework\Main.v" Line 89: Result of 32-bit expression is truncated to fit in 10-bit target.
+
+Elaborating module <brick>.
+WARNING:HDLCompiler:1499 - "E:\Framework\ipcore_dir\brick.v" Line 39: Empty module <brick> remains a black box.
+
+Elaborating module <kid_left>.
+WARNING:HDLCompiler:1499 - "E:\Framework\ipcore_dir\kid_left.v" Line 39: Empty module <kid_left> remains a black box.
+
+Elaborating module <kid_right>.
+WARNING:HDLCompiler:1499 - "E:\Framework\ipcore_dir\kid_right.v" Line 39: Empty module <kid_right> remains a black box.
+
+Elaborating module <flag>.
+WARNING:HDLCompiler:1499 - "E:\Framework\ipcore_dir\flag.v" Line 39: Empty module <flag> remains a black box.
+
+Elaborating module <youwin>.
+WARNING:HDLCompiler:1499 - "E:\Framework\ipcore_dir\youwin.v" Line 39: Empty module <youwin> remains a black box.
+
+Elaborating module <stab>.
+WARNING:HDLCompiler:1499 - "E:\Framework\ipcore_dir\stab.v" Line 39: Empty module <stab> remains a black box.
+
+Elaborating module <gameover>.
+WARNING:HDLCompiler:1499 - "E:\Framework\ipcore_dir\gameover.v" Line 39: Empty module <gameover> remains a black box.
+
+Elaborating module <tortoise>.
+WARNING:HDLCompiler:1499 - "E:\Framework\ipcore_dir\tortoise.v" Line 39: Empty module <tortoise> remains a black box.
+
+Elaborating module <tortoise_left>.
+WARNING:HDLCompiler:1499 - "E:\Framework\ipcore_dir\tortoise_left.v" Line 39: Empty module <tortoise_left> remains a black box.
+
+Elaborating module <diamond>.
+WARNING:HDLCompiler:1499 - "E:\Framework\ipcore_dir\diamond.v" Line 39: Empty module <diamond> remains a black box.
+
+Elaborating module <cannon>.
+WARNING:HDLCompiler:1499 - "E:\Framework\ipcore_dir\cannon.v" Line 39: Empty module <cannon> remains a black box.
+
+Elaborating module <cannonball>.
+WARNING:HDLCompiler:1499 - "E:\Framework\ipcore_dir\cannonball.v" Line 39: Empty module <cannonball> remains a black box.
+WARNING:HDLCompiler:413 - "E:\Framework\Main.v" Line 133: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "E:\Framework\Main.v" Line 134: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "E:\Framework\Main.v" Line 152: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "E:\Framework\Main.v" Line 153: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "E:\Framework\Main.v" Line 158: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "E:\Framework\Main.v" Line 159: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "E:\Framework\Main.v" Line 164: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "E:\Framework\Main.v" Line 276: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "E:\Framework\Main.v" Line 277: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "E:\Framework\Main.v" Line 334: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "E:\Framework\Main.v" Line 342: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "E:\Framework\Main.v" Line 343: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "E:\Framework\Main.v" Line 353: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "E:\Framework\Main.v" Line 354: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "E:\Framework\Main.v" Line 358: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:634 - "E:\Framework\Main.v" Line 77: Net <flagA[299]> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\Framework\Main.v" Line 78: Net <brick[279]> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\Framework\Main.v" Line 79: Net <stab[299]> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\Framework\Main.v" Line 80: Net <diamondA[299]> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\Framework\Main.v" Line 81: Net <cannonA[149]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Main>.
+    Related source file is "E:\Framework\Main.v".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2935 - Signal 'flagA<299:98>', unconnected in block 'Main', is tied to its initial value (0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'flagA<96:0>', unconnected in block 'Main', is tied to its initial value (0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'brick<279:238>', unconnected in block 'Main', is tied to its initial value (000000000000000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'brick<231:224>', unconnected in block 'Main', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'brick<219:202>', unconnected in block 'Main', is tied to its initial value (000000000000000000).
+WARNING:Xst:2935 - Signal 'brick<199:169>', unconnected in block 'Main', is tied to its initial value (0000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'brick<162:119>', unconnected in block 'Main', is tied to its initial value (00000000000000000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'brick<111:103>', unconnected in block 'Main', is tied to its initial value (000000000).
+WARNING:Xst:2935 - Signal 'brick<100:99>', unconnected in block 'Main', is tied to its initial value (00).
+WARNING:Xst:2935 - Signal 'brick<97>', unconnected in block 'Main', is tied to its initial value (0).
+WARNING:Xst:2935 - Signal 'brick<95:79>', unconnected in block 'Main', is tied to its initial value (00000000000000000).
+WARNING:Xst:2935 - Signal 'brick<75:0>', unconnected in block 'Main', is tied to its initial value (0000000000000000000000000000000000000000000000000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'stab<299:268>', unconnected in block 'Main', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'stab<265:147>', unconnected in block 'Main', is tied to its initial value (00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'stab<145:0>', unconnected in block 'Main', is tied to its initial value (00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'diamondA<299:82>', unconnected in block 'Main', is tied to its initial value (00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'diamondA<80:0>', unconnected in block 'Main', is tied to its initial value (000000000000000000000000000000000000000000000000000000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'cannonA<149:101>', unconnected in block 'Main', is tied to its initial value (0000000000000000000000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'cannonA<99:0>', unconnected in block 'Main', is tied to its initial value (0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).
+    Register <Py_next> equivalent to <Py> has been removed
+    Found 1-bit register for signal <stop>.
+    Found 10-bit register for signal <Bx>.
+    Found 9-bit register for signal <Btime>.
+    Found 10-bit register for signal <Tx>.
+    Found 9-bit register for signal <Ttime>.
+    Found 2-bit register for signal <Tdirection>.
+    Found 9-bit register for signal <By>.
+    Found 9-bit register for signal <Ty>.
+    Found 1-bit register for signal <win>.
+    Found 1-bit register for signal <lose>.
+    Found 1-bit register for signal <brick<299>>.
+    Found 1-bit register for signal <brick<298>>.
+    Found 1-bit register for signal <brick<297>>.
+    Found 1-bit register for signal <brick<296>>.
+    Found 1-bit register for signal <brick<295>>.
+    Found 1-bit register for signal <brick<294>>.
+    Found 1-bit register for signal <brick<293>>.
+    Found 1-bit register for signal <brick<292>>.
+    Found 1-bit register for signal <brick<291>>.
+    Found 1-bit register for signal <brick<290>>.
+    Found 1-bit register for signal <brick<289>>.
+    Found 1-bit register for signal <brick<288>>.
+    Found 1-bit register for signal <brick<287>>.
+    Found 1-bit register for signal <brick<286>>.
+    Found 1-bit register for signal <brick<285>>.
+    Found 1-bit register for signal <brick<284>>.
+    Found 1-bit register for signal <brick<283>>.
+    Found 1-bit register for signal <brick<282>>.
+    Found 1-bit register for signal <brick<281>>.
+    Found 1-bit register for signal <brick<280>>.
+    Found 1-bit register for signal <brick<237>>.
+    Found 1-bit register for signal <brick<236>>.
+    Found 1-bit register for signal <brick<235>>.
+    Found 1-bit register for signal <brick<234>>.
+    Found 1-bit register for signal <brick<233>>.
+    Found 1-bit register for signal <brick<232>>.
+    Found 1-bit register for signal <brick<223>>.
+    Found 1-bit register for signal <brick<222>>.
+    Found 1-bit register for signal <brick<221>>.
+    Found 1-bit register for signal <brick<220>>.
+    Found 1-bit register for signal <brick<201>>.
+    Found 1-bit register for signal <brick<200>>.
+    Found 1-bit register for signal <brick<168>>.
+    Found 1-bit register for signal <brick<167>>.
+    Found 1-bit register for signal <brick<166>>.
+    Found 1-bit register for signal <brick<165>>.
+    Found 1-bit register for signal <brick<164>>.
+    Found 1-bit register for signal <brick<163>>.
+    Found 1-bit register for signal <brick<118>>.
+    Found 1-bit register for signal <brick<117>>.
+    Found 1-bit register for signal <brick<116>>.
+    Found 1-bit register for signal <brick<115>>.
+    Found 1-bit register for signal <brick<114>>.
+    Found 1-bit register for signal <brick<113>>.
+    Found 1-bit register for signal <brick<112>>.
+    Found 1-bit register for signal <brick<102>>.
+    Found 1-bit register for signal <brick<101>>.
+    Found 1-bit register for signal <brick<98>>.
+    Found 1-bit register for signal <brick<96>>.
+    Found 1-bit register for signal <brick<78>>.
+    Found 1-bit register for signal <brick<77>>.
+    Found 1-bit register for signal <brick<76>>.
+    Found 1-bit register for signal <flagA<97>>.
+    Found 1-bit register for signal <stab<267>>.
+    Found 1-bit register for signal <stab<266>>.
+    Found 1-bit register for signal <stab<146>>.
+    Found 1-bit register for signal <diamondA<81>>.
+    Found 1-bit register for signal <cannonA<100>>.
+    Found 1-bit register for signal <start>.
+    Found 10-bit register for signal <Px>.
+    Found 1-bit register for signal <xstop>.
+    Found 2-bit register for signal <direction>.
+    Found 1-bit register for signal <xOK>.
+    Found 9-bit register for signal <Py>.
+    Found 1-bit register for signal <jump>.
+    Found 7-bit register for signal <jumptime>.
+    Found 1-bit register for signal <open>.
+    Found 10-bit subtractor for signal <GND_1_o_GND_1_o_sub_2_OUT> created at line 85.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_3_OUT> created at line 85.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_5_OUT> created at line 86.
+    Found 10-bit subtractor for signal <GND_1_o_GND_1_o_sub_6_OUT> created at line 86.
+    Found 10-bit subtractor for signal <GND_1_o_GND_1_o_sub_9_OUT> created at line 87.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_10_OUT> created at line 87.
+    Found 10-bit subtractor for signal <GND_1_o_GND_1_o_sub_13_OUT> created at line 89.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_14_OUT> created at line 89.
+    Found 11-bit subtractor for signal <n0608> created at line 201.
+    Found 10-bit subtractor for signal <n0611> created at line 201.
+    Found 10-bit subtractor for signal <GND_1_o_GND_1_o_sub_94_OUT> created at line 205.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_98_OUT> created at line 205.
+    Found 10-bit subtractor for signal <GND_1_o_GND_1_o_sub_102_OUT> created at line 209.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_106_OUT> created at line 209.
+    Found 11-bit subtractor for signal <n0634> created at line 293.
+    Found 10-bit subtractor for signal <n0665> created at line 364.
+    Found 10-bit adder for signal <addr> created at line 84.
+    Found 32-bit adder for signal <n0567> created at line 85.
+    Found 32-bit adder for signal <n0568> created at line 86.
+    Found 32-bit adder for signal <n0569> created at line 87.
+    Found 11-bit adder for signal <cannonaddr> created at line 88.
+    Found 32-bit adder for signal <n0571> created at line 89.
+    Found 9-bit adder for signal <Btime[8]_GND_1_o_add_25_OUT> created at line 133.
+    Found 10-bit adder for signal <Bx[9]_GND_1_o_add_26_OUT> created at line 134.
+    Found 10-bit adder for signal <Tx[9]_GND_1_o_add_40_OUT> created at line 153.
+    Found 9-bit adder for signal <Ttime[8]_GND_1_o_add_43_OUT> created at line 158.
+    Found 9-bit adder for signal <GND_1_o_Py[8]_add_72_OUT> created at line 201.
+    Found 28-bit adder for signal <n0868> created at line 201.
+    Found 28-bit adder for signal <n0610> created at line 201.
+    Found 28-bit adder for signal <n0727> created at line 201.
+    Found 32-bit adder for signal <n0614> created at line 201.
+    Found 32-bit adder for signal <n0878> created at line 201.
+    Found 32-bit adder for signal <n0616> created at line 201.
+    Found 10-bit adder for signal <n0731> created at line 205.
+    Found 11-bit adder for signal <n0736> created at line 205.
+    Found 10-bit adder for signal <n0741> created at line 209.
+    Found 11-bit adder for signal <n0746> created at line 209.
+    Found 10-bit adder for signal <Px[9]_GND_1_o_add_120_OUT> created at line 277.
+    Found 9-bit adder for signal <GND_1_o_Py[8]_add_127_OUT> created at line 285.
+    Found 32-bit adder for signal <n0633> created at line 285.
+    Found 28-bit adder for signal <n0899> created at line 293.
+    Found 28-bit adder for signal <n0636> created at line 293.
+    Found 32-bit adder for signal <n0904> created at line 293.
+    Found 32-bit adder for signal <n0638> created at line 293.
+    Found 5-bit adder for signal <n0761> created at line 325.
+    Found 10-bit adder for signal <n0646> created at line 325.
+    Found 9-bit adder for signal <GND_1_o_GND_1_o_add_173_OUT> created at line 345.
+    Found 28-bit adder for signal <n0917> created at line 345.
+    Found 28-bit adder for signal <n0652> created at line 345.
+    Found 7-bit adder for signal <jumptime[6]_GND_1_o_add_185_OUT> created at line 354.
+    Found 9-bit adder for signal <Py[8]_GND_1_o_add_187_OUT> created at line 358.
+    Found 28-bit adder for signal <n0772> created at line 364.
+    Found 32-bit adder for signal <n0668> created at line 364.
+    Found 32-bit adder for signal <n0931> created at line 364.
+    Found 32-bit adder for signal <n0670> created at line 364.
+    Found 11-bit adder for signal <n0787> created at line 399.
+    Found 10-bit adder for signal <n0789> created at line 399.
+    Found 11-bit adder for signal <n0801> created at line 407.
+    Found 10-bit adder for signal <n0803> created at line 407.
+    Found 8-bit adder for signal <GND_1_o_y[8]_add_247_OUT> created at line 414.
+    Found 11-bit adder for signal <n0807> created at line 418.
+    Found 10-bit adder for signal <n0809> created at line 418.
+    Found 9-bit adder for signal <GND_1_o_y[8]_add_265_OUT> created at line 434.
+    Found 10-bit subtractor for signal <GND_1_o_GND_1_o_sub_47_OUT<9:0>> created at line 164.
+    Found 10-bit subtractor for signal <GND_1_o_GND_1_o_sub_120_OUT<9:0>> created at line 276.
+    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_171_OUT<8:0>> created at line 342.
+    Found 32x9-bit multiplier for signal <n0576> created at line 86.
+    Found 4x5-bit multiplier for signal <n0863> created at line 201.
+    Found 28x5-bit multiplier for signal <n0613> created at line 201.
+    Found 5x5-bit multiplier for signal <n0909> created at line 325.
+    Found 4x5-bit multiplier for signal <n0912> created at line 345.
+    Found 28x5-bit multiplier for signal <n0667> created at line 364.
+    Found 4x4-bit multiplier for signal <n0942> created at line 414.
+    Found 4x5-bit multiplier for signal <n0949> created at line 434.
+WARNING:Xst:737 - Found 1-bit latch for signal <RGB<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RGB<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RGB<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RGB<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RGB<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RGB<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RGB<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RGB<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RGB<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RGB<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RGB<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RGB<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 10-bit comparator lessequal for signal <n0016> created at line 111
+    Found 10-bit comparator lessequal for signal <n0018> created at line 111
+    Found 9-bit comparator greater for signal <n0031> created at line 132
+    Found 9-bit comparator greater for signal <n0045> created at line 151
+    Found 9-bit comparator lessequal for signal <n0048> created at line 157
+    Found 9-bit comparator lessequal for signal <n0050> created at line 157
+    Found 10-bit comparator lessequal for signal <n0073> created at line 190
+    Found 10-bit comparator lessequal for signal <n0075> created at line 190
+    Found 9-bit comparator lessequal for signal <n0078> created at line 190
+    Found 9-bit comparator lessequal for signal <n0081> created at line 190
+    Found 10-bit comparator lessequal for signal <n0107> created at line 205
+    Found 32-bit comparator lessequal for signal <n0110> created at line 205
+    Found 11-bit comparator lessequal for signal <n0114> created at line 205
+    Found 32-bit comparator lessequal for signal <n0118> created at line 205
+    Found 10-bit comparator lessequal for signal <n0123> created at line 209
+    Found 32-bit comparator lessequal for signal <n0126> created at line 209
+    Found 11-bit comparator lessequal for signal <n0130> created at line 209
+    Found 32-bit comparator lessequal for signal <n0134> created at line 209
+    Found 7-bit comparator greater for signal <n0321> created at line 341
+    Found 7-bit comparator lessequal for signal <n0334> created at line 352
+    Found 7-bit comparator lessequal for signal <n0336> created at line 352
+    Found 10-bit comparator lessequal for signal <n0372> created at line 390
+    Found 10-bit comparator lessequal for signal <n0374> created at line 390
+    Found 9-bit comparator lessequal for signal <n0377> created at line 390
+    Found 9-bit comparator lessequal for signal <n0380> created at line 390
+    Found 10-bit comparator lessequal for signal <n0385> created at line 399
+    Found 11-bit comparator lessequal for signal <n0388> created at line 399
+    Found 9-bit comparator lessequal for signal <n0391> created at line 399
+    Found 10-bit comparator lessequal for signal <n0395> created at line 399
+    Found 10-bit comparator lessequal for signal <n0403> created at line 407
+    Found 11-bit comparator lessequal for signal <n0406> created at line 407
+    Found 9-bit comparator lessequal for signal <n0409> created at line 407
+    Found 10-bit comparator lessequal for signal <n0413> created at line 407
+    Found 10-bit comparator lessequal for signal <n0423> created at line 418
+    Found 11-bit comparator lessequal for signal <n0426> created at line 418
+    Found 9-bit comparator lessequal for signal <n0429> created at line 418
+    Found 10-bit comparator lessequal for signal <n0433> created at line 418
+    Summary:
+	inferred   8 Multiplier(s).
+	inferred  66 Adder/Subtractor(s).
+	inferred 152 D-type flip-flop(s).
+	inferred  12 Latch(s).
+	inferred  37 Comparator(s).
+	inferred 737 Multiplexer(s).
+Unit <Main> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 8
+ 28x5-bit multiplier                                   : 2
+ 32x9-bit multiplier                                   : 1
+ 4x4-bit multiplier                                    : 1
+ 5x4-bit multiplier                                    : 3
+ 5x5-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 66
+ 10-bit adder                                          : 10
+ 10-bit subtractor                                     : 10
+ 11-bit adder                                          : 6
+ 11-bit subtractor                                     : 8
+ 28-bit adder                                          : 8
+ 32-bit adder                                          : 13
+ 5-bit adder                                           : 1
+ 7-bit adder                                           : 1
+ 8-bit adder                                           : 1
+ 9-bit adder                                           : 7
+ 9-bit subtractor                                      : 1
+# Registers                                            : 77
+ 1-bit register                                        : 66
+ 10-bit register                                       : 3
+ 2-bit register                                        : 2
+ 7-bit register                                        : 1
+ 9-bit register                                        : 5
+# Latches                                              : 12
+ 1-bit latch                                           : 12
+# Comparators                                          : 37
+ 10-bit comparator lessequal                           : 14
+ 11-bit comparator lessequal                           : 5
+ 32-bit comparator lessequal                           : 4
+ 7-bit comparator greater                              : 1
+ 7-bit comparator lessequal                            : 2
+ 9-bit comparator greater                              : 2
+ 9-bit comparator lessequal                            : 9
+# Multiplexers                                         : 737
+ 1-bit 2-to-1 multiplexer                              : 707
+ 10-bit 2-to-1 multiplexer                             : 9
+ 12-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 2
+ 7-bit 2-to-1 multiplexer                              : 5
+ 9-bit 2-to-1 multiplexer                              : 13
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/brick.ngc>.
+Reading core <ipcore_dir/flag.ngc>.
+Reading core <ipcore_dir/stab.ngc>.
+Reading core <ipcore_dir/diamond.ngc>.
+Reading core <ipcore_dir/cannon.ngc>.
+Reading core <ipcore_dir/kid_left.ngc>.
+Reading core <ipcore_dir/kid_right.ngc>.
+Reading core <ipcore_dir/youwin.ngc>.
+Reading core <ipcore_dir/gameover.ngc>.
+Reading core <ipcore_dir/tortoise.ngc>.
+Reading core <ipcore_dir/tortoise_left.ngc>.
+Reading core <ipcore_dir/cannonball.ngc>.
+Loading core <brick> for timing and area information for instance <B>.
+Loading core <flag> for timing and area information for instance <F>.
+Loading core <stab> for timing and area information for instance <S>.
+Loading core <diamond> for timing and area information for instance <D>.
+Loading core <cannon> for timing and area information for instance <C>.
+Loading core <kid_left> for timing and area information for instance <L>.
+Loading core <kid_right> for timing and area information for instance <R>.
+Loading core <youwin> for timing and area information for instance <Y>.
+Loading core <gameover> for timing and area information for instance <G>.
+Loading core <tortoise> for timing and area information for instance <T>.
+Loading core <tortoise_left> for timing and area information for instance <TL>.
+Loading core <cannonball> for timing and area information for instance <CB>.
+WARNING:Xst:1293 - FF/Latch <Ty_8> has a constant value of 1 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ty_7> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ty_6> has a constant value of 1 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ty_5> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ty_4> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ty_3> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ty_2> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ty_1> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ty_0> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <By_8> has a constant value of 1 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <By_7> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <By_6> has a constant value of 1 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <By_5> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <By_4> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <By_3> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <By_2> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <By_1> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <By_0> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <Main>.
+	Multiplier <Mmult_n0909> in block <Main> and adder/subtractor <Madd_n0646_Madd> in block <Main> are combined into a MAC<Maddsub_n0909>.
+	Multiplier <Mmult_n0942> in block <Main> and adder/subtractor <Madd_GND_1_o_y[8]_add_247_OUT> in block <Main> are combined into a MAC<Maddsub_n0942>.
+	Multiplier <Mmult_n0949> in block <Main> and adder/subtractor <Madd_GND_1_o_y[8]_add_265_OUT> in block <Main> are combined into a MAC<Maddsub_n0949>.
+	Adder/Subtractor <Madd_n0761> in block <Main> and  <Maddsub_n0909> in block <Main> are combined into a MAC with pre-adder <Maddsub_n09091>.
+	The following registers are also absorbed by the MAC with pre-adder: <Px> in block <Main>.
+Unit <Main> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 3
+ 4x4-to-8-bit MAC                                      : 1
+ 5x4-to-9-bit MAC                                      : 1
+ 5x5-to-9-bit MAC with pre-adder                       : 1
+# Multipliers                                          : 5
+ 28x5-bit multiplier                                   : 2
+ 32x9-bit multiplier                                   : 1
+ 5x4-bit multiplier                                    : 2
+# Adders/Subtractors                                   : 56
+ 10-bit adder                                          : 12
+ 10-bit subtractor                                     : 10
+ 11-bit adder                                          : 6
+ 11-bit subtractor                                     : 5
+ 16-bit adder                                          : 1
+ 28-bit adder                                          : 2
+ 5-bit subtractor                                      : 3
+ 7-bit adder                                           : 1
+ 9-bit adder                                           : 9
+ 9-bit adder carry in                                  : 6
+ 9-bit subtractor                                      : 1
+# Registers                                            : 152
+ Flip-Flops                                            : 152
+# Comparators                                          : 37
+ 10-bit comparator lessequal                           : 14
+ 11-bit comparator lessequal                           : 5
+ 32-bit comparator lessequal                           : 4
+ 7-bit comparator greater                              : 1
+ 7-bit comparator lessequal                            : 2
+ 9-bit comparator greater                              : 2
+ 9-bit comparator lessequal                            : 9
+# Multiplexers                                         : 737
+ 1-bit 2-to-1 multiplexer                              : 707
+ 10-bit 2-to-1 multiplexer                             : 9
+ 12-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 2
+ 7-bit 2-to-1 multiplexer                              : 5
+ 9-bit 2-to-1 multiplexer                              : 13
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <Ty_8> has a constant value of 1 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ty_7> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ty_6> has a constant value of 1 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ty_5> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ty_4> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ty_3> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ty_2> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ty_1> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ty_0> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <By_8> has a constant value of 1 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <By_7> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <By_6> has a constant value of 1 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <By_5> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <By_4> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <By_3> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <By_2> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <By_1> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <By_0> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Mmult_n05761> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <Mmult_n06131> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <Mmult_n06671> of sequential type is unconnected in block <Main>.
+WARNING:Xst:1710 - FF/Latch <Maddsub_n090911_0> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <Px_5> in Unit <Main> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n090911_5> 
+INFO:Xst:2261 - The FF/Latch <Px_6> in Unit <Main> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n090911_4> 
+INFO:Xst:2261 - The FF/Latch <Px_7> in Unit <Main> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n090911_3> 
+INFO:Xst:2261 - The FF/Latch <Px_8> in Unit <Main> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n090911_2> 
+INFO:Xst:2261 - The FF/Latch <Px_9> in Unit <Main> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n090911_1> 
+
+Optimizing unit <Main> ...
+WARNING:Xst:1293 - FF/Latch <Bx_0> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Px_0> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Px_1> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Py_0> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Py_1> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Px_0> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Px_1> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Btime_8> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <jumptime_6> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Py_0> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Py_1> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <brick_299> in Unit <Main> is equivalent to the following 51 FFs/Latches, which will be removed : <brick_298> <brick_297> <brick_296> <brick_295> <brick_294> <brick_293> <brick_292> <brick_289> <brick_291> <brick_290> <brick_288> <brick_287> <brick_286> <brick_285> <brick_284> <brick_283> <brick_282> <brick_281> <brick_280> <brick_237> <brick_236> <brick_235> <brick_232> <brick_234> <brick_233> <brick_223> <brick_222> <brick_221> <brick_220> <brick_168> <brick_201> <brick_200> <brick_167> <brick_166> <brick_165> <brick_164> <brick_116> <brick_163> <brick_117> <brick_115> <brick_114> <brick_113> <brick_112> <brick_102> <brick_101> <flagA_97> <stab_267> <stab_266> <stab_146> <cannonA_100> <start> 
+INFO:Xst:2261 - The FF/Latch <Btime_0> in Unit <Main> is equivalent to the following FF/Latch, which will be removed : <Bx_1> 
+INFO:Xst:2261 - The FF/Latch <Btime_1> in Unit <Main> is equivalent to the following FF/Latch, which will be removed : <Bx_2> 
+INFO:Xst:2261 - The FF/Latch <Ttime_0> in Unit <Main> is equivalent to the following FF/Latch, which will be removed : <Tx_0> 
+INFO:Xst:2261 - The FF/Latch <brick_118> in Unit <Main> is equivalent to the following 6 FFs/Latches, which will be removed : <brick_98> <brick_96> <brick_78> <brick_77> <brick_76> <diamondA_81> 
+INFO:Xst:3203 - The FF/Latch <Tdirection_0> in Unit <Main> is the opposite to the following FF/Latch, which will be removed : <Tdirection_1> 
+INFO:Xst:3203 - The FF/Latch <Btime_2> in Unit <Main> is the opposite to the following FF/Latch, which will be removed : <Bx_3> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Main, actual ratio is 38.
+FlipFlop Px_2 has been replicated 2 time(s)
+FlipFlop Px_3 has been replicated 3 time(s)
+FlipFlop Px_4 has been replicated 2 time(s)
+FlipFlop Px_5 has been replicated 2 time(s)
+FlipFlop Px_6 has been replicated 3 time(s)
+FlipFlop Px_7 has been replicated 1 time(s)
+FlipFlop Px_8 has been replicated 2 time(s)
+FlipFlop Px_9 has been replicated 1 time(s)
+FlipFlop Py_2 has been replicated 1 time(s)
+FlipFlop Py_4 has been replicated 1 time(s)
+FlipFlop Py_6 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 84
+ Flip-Flops                                            : 84
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Main.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 53838
+#      GND                         : 5
+#      INV                         : 15
+#      LUT1                        : 19
+#      LUT2                        : 518
+#      LUT3                        : 1276
+#      LUT4                        : 4288
+#      LUT5                        : 11433
+#      LUT6                        : 32857
+#      MUXCY                       : 174
+#      MUXF7                       : 2264
+#      MUXF8                       : 842
+#      VCC                         : 7
+#      XORCY                       : 140
+# FlipFlops/Latches                : 96
+#      FD                          : 47
+#      FDR                         : 30
+#      FDS                         : 6
+#      FDSE                        : 1
+#      LD                          : 12
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 43
+#      IBUF                        : 30
+#      OBUF                        : 13
+# DSPs                             : 3
+#      DSP48E1                     : 3
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k160tffg676-2l 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              84  out of  202800     0%  
+ Number of Slice LUTs:                50406  out of  101400    49%  
+    Number used as Logic:             50406  out of  101400    49%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:  50429
+   Number with an unused Flip Flop:   50345  out of  50429    99%  
+   Number with an unused LUT:            23  out of  50429     0%  
+   Number of fully used LUT-FF pairs:    61  out of  50429     0%  
+   Number of unique control sets:        13
+
+IO Utilization: 
+ Number of IOs:                          45
+ Number of bonded IOBs:                  44  out of    400    11%  
+    IOB Flip Flops/Latches:              12
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+ Number of DSP48E1s:                      3  out of    600     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+vs                                 | BUFGP                  | 84    |
+By<6>                              | NONE(RGB_9)            | 12    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 11.835ns (Maximum Frequency: 84.493MHz)
+   Minimum input arrival time before clock: 11.724ns
+   Maximum output required time after clock: 0.580ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'vs'
+  Clock period: 11.835ns (frequency: 84.493MHz)
+  Total number of paths / destination ports: 1896622597 / 121
+-------------------------------------------------------------------------
+Delay:               11.835ns (Levels of Logic = 25)
+  Source:            Py_4_1 (FF)
+  Destination:       Py_2 (FF)
+  Source Clock:      vs rising
+  Destination Clock: vs rising
+
+  Data Path: Py_4_1 to Py_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.236   0.507  Py_4_1 (Py_4_1)
+     LUT3:I0->O            9   0.043   0.450  Madd_n0727_xor<3>111 (GND_1_o_GND_1_o_AND_1843_o1)
+     LUT6:I4->O           13   0.043   0.563  Mmult_n0912_Madd_lut<4>11 (Mmult_n0912_Madd_lut<4>)
+     LUT4:I1->O            1   0.043   0.000  Madd_n0652_Madd_Madd_lut<5> (Madd_n0652_Madd_Madd_lut<5>)
+     MUXCY:S->O            1   0.238   0.000  Madd_n0652_Madd_Madd_cy<5> (Madd_n0652_Madd_Madd_cy<5>)
+     XORCY:CI->O           5   0.262   0.373  Madd_n0652_Madd_Madd_xor<6> (n0652<6>)
+     LUT5:I4->O            2   0.043   0.500  GND_1_o_BUS_0038_OR_60_o39_SW2 (N138)
+     LUT6:I3->O            7   0.043   0.373  GND_1_o_BUS_0038_OR_60_o39 (GND_1_o_BUS_0038_OR_60_o42)
+     MUXF7:S->O            1   0.234   0.350  GND_1_o_BUS_0038_OR_60_o42_SW2 (N208)
+     LUT6:I5->O            2   0.043   0.355  Msub_n0665_cy<4>13 (Msub_n0665_cy<4>12)
+     LUT6:I5->O            4   0.043   0.512  Msub_n0665_cy<4>16 (Msub_n0665_cy<4>)
+     LUT5:I2->O            1   0.043   0.339  Madd_n0772_xor<4>11 (n0772<4>)
+     DSP48E1:A4->P0        2   2.737   0.355  Mmult_n0667 (n0667<0>)
+     LUT2:I1->O            1   0.043   0.000  Madd_n0668_Madd_lut<0> (Madd_n0668_Madd_lut<0>)
+     MUXCY:S->O            1   0.238   0.000  Madd_n0668_Madd_cy<0> (Madd_n0668_Madd_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  Madd_n0668_Madd_cy<1> (Madd_n0668_Madd_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  Madd_n0668_Madd_cy<2> (Madd_n0668_Madd_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  Madd_n0668_Madd_cy<3> (Madd_n0668_Madd_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  Madd_n0668_Madd_cy<4> (Madd_n0668_Madd_cy<4>)
+     MUXCY:CI->O           1   0.013   0.000  Madd_n0668_Madd_cy<5> (Madd_n0668_Madd_cy<5>)
+     XORCY:CI->O           6   0.262   0.550  Madd_n0668_Madd_xor<6> (n0668<6>)
+     LUT4:I0->O            1   0.043   0.339  Mmux_GND_1_o_X_1_o_Mux_200_o71 (Mmux_GND_1_o_X_1_o_Mux_200_o7)
+     MUXF7:S->O            2   0.234   0.355  Mmux_GND_1_o_X_1_o_Mux_200_o713_SW0 (N118)
+     LUT6:I5->O            1   0.043   0.405  Mmux_GND_1_o_X_1_o_Mux_200_o1718_SW1 (N134)
+     LUT5:I3->O            7   0.043   0.439  Mmux_GND_1_o_X_1_o_Mux_200_o1718 (GND_1_o_X_1_o_Mux_200_o)
+     LUT6:I4->O            2   0.043   0.000  Mmux_Py[8]_Py[8]_mux_208_OUT32 (Py[8]_Py[8]_mux_208_OUT<2>)
+     FD:D                     -0.000          Py_2
+    ----------------------------------------
+    Total                     11.835ns (5.068ns logic, 6.768ns route)
+                                       (42.8% logic, 57.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'vs'
+  Total number of paths / destination ports: 336356993 / 116
+-------------------------------------------------------------------------
+Offset:              11.724ns (Levels of Logic = 26)
+  Source:            reset (PAD)
+  Destination:       Py_2 (FF)
+  Destination Clock: vs rising
+
+  Data Path: reset to Py_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           186   0.000   0.771  reset_IBUF (reset_IBUF)
+     LUT6:I0->O           19   0.043   0.451  Msub_GND_1_o_GND_1_o_sub_171_OUT<8:0>_xor<6>11 (GND_1_o_GND_1_o_sub_171_OUT<6>)
+     LUT6:I5->O           14   0.043   0.422  Mmult_n0912_Madd_lut<5>1 (Mmult_n0912_Madd_lut<5>)
+     LUT4:I3->O            1   0.043   0.000  Madd_n0652_Madd_Madd_lut<5> (Madd_n0652_Madd_Madd_lut<5>)
+     MUXCY:S->O            1   0.238   0.000  Madd_n0652_Madd_Madd_cy<5> (Madd_n0652_Madd_Madd_cy<5>)
+     XORCY:CI->O           5   0.262   0.373  Madd_n0652_Madd_Madd_xor<6> (n0652<6>)
+     LUT5:I4->O            2   0.043   0.500  GND_1_o_BUS_0038_OR_60_o39_SW2 (N138)
+     LUT6:I3->O            7   0.043   0.373  GND_1_o_BUS_0038_OR_60_o39 (GND_1_o_BUS_0038_OR_60_o42)
+     MUXF7:S->O            1   0.234   0.350  GND_1_o_BUS_0038_OR_60_o42_SW2 (N208)
+     LUT6:I5->O            2   0.043   0.355  Msub_n0665_cy<4>13 (Msub_n0665_cy<4>12)
+     LUT6:I5->O            4   0.043   0.512  Msub_n0665_cy<4>16 (Msub_n0665_cy<4>)
+     LUT5:I2->O            1   0.043   0.339  Madd_n0772_xor<4>11 (n0772<4>)
+     DSP48E1:A4->P0        2   2.737   0.355  Mmult_n0667 (n0667<0>)
+     LUT2:I1->O            1   0.043   0.000  Madd_n0668_Madd_lut<0> (Madd_n0668_Madd_lut<0>)
+     MUXCY:S->O            1   0.238   0.000  Madd_n0668_Madd_cy<0> (Madd_n0668_Madd_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  Madd_n0668_Madd_cy<1> (Madd_n0668_Madd_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  Madd_n0668_Madd_cy<2> (Madd_n0668_Madd_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  Madd_n0668_Madd_cy<3> (Madd_n0668_Madd_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  Madd_n0668_Madd_cy<4> (Madd_n0668_Madd_cy<4>)
+     MUXCY:CI->O           1   0.013   0.000  Madd_n0668_Madd_cy<5> (Madd_n0668_Madd_cy<5>)
+     XORCY:CI->O           6   0.262   0.550  Madd_n0668_Madd_xor<6> (n0668<6>)
+     LUT4:I0->O            1   0.043   0.339  Mmux_GND_1_o_X_1_o_Mux_200_o71 (Mmux_GND_1_o_X_1_o_Mux_200_o7)
+     MUXF7:S->O            2   0.234   0.355  Mmux_GND_1_o_X_1_o_Mux_200_o713_SW0 (N118)
+     LUT6:I5->O            1   0.043   0.405  Mmux_GND_1_o_X_1_o_Mux_200_o1718_SW1 (N134)
+     LUT5:I3->O            7   0.043   0.439  Mmux_GND_1_o_X_1_o_Mux_200_o1718 (GND_1_o_X_1_o_Mux_200_o)
+     LUT6:I4->O            2   0.043   0.000  Mmux_Py[8]_Py[8]_mux_208_OUT32 (Py[8]_Py[8]_mux_208_OUT<2>)
+     FD:D                     -0.000          Py_2
+    ----------------------------------------
+    Total                     11.724ns (4.832ns logic, 6.893ns route)
+                                       (41.2% logic, 58.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'vs'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.580ns (Levels of Logic = 1)
+  Source:            stop (FF)
+  Destination:       stop (PAD)
+  Source Clock:      vs rising
+
+  Data Path: stop to stop
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.236   0.344  stop (stop_OBUF)
+     OBUF:I->O                 0.000          stop_OBUF (stop)
+    ----------------------------------------
+    Total                      0.580ns (0.236ns logic, 0.344ns route)
+                                       (40.7% logic, 59.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock vs
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+vs             |   11.835|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 59.00 secs
+Total CPU time to Xst completion: 58.85 secs
+ 
+--> 
+
+Total memory usage is 4955588 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  121 (   0 filtered)
+Number of infos    :   13 (   0 filtered)
+

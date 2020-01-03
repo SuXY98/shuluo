@@ -1,0 +1,55 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/bigP/Framework/Main_test_isim_beh.exe -prj E:/bigP/Framework/Main_test_beh.prj work.Main_test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/bigP/Framework/ipcore_dir/youwin.v" into library work
+Analyzing Verilog file "E:/bigP/Framework/ipcore_dir/tortoise_left.v" into library work
+Analyzing Verilog file "E:/bigP/Framework/ipcore_dir/tortoise.v" into library work
+Analyzing Verilog file "E:/bigP/Framework/ipcore_dir/stab.v" into library work
+Analyzing Verilog file "E:/bigP/Framework/ipcore_dir/kid_right.v" into library work
+Analyzing Verilog file "E:/bigP/Framework/ipcore_dir/kid_left.v" into library work
+Analyzing Verilog file "E:/bigP/Framework/ipcore_dir/gameover.v" into library work
+Analyzing Verilog file "E:/bigP/Framework/ipcore_dir/flag.v" into library work
+Analyzing Verilog file "E:/bigP/Framework/ipcore_dir/diamond.v" into library work
+Analyzing Verilog file "E:/bigP/Framework/ipcore_dir/cannonball.v" into library work
+Analyzing Verilog file "E:/bigP/Framework/ipcore_dir/cannon.v" into library work
+Analyzing Verilog file "E:/bigP/Framework/ipcore_dir/brick.v" into library work
+Analyzing Verilog file "E:/bigP/Framework/Main.v" into library work
+Analyzing Verilog file "E:/bigP/Framework/Main_test.v" into library work
+Analyzing Verilog file "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module brick
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module kid_left
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module kid_right
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module flag
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module youwin
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module stab
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module gameover
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module tortoise
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module tortoise_left
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module diamond
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module cannon
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module cannonball
+Compiling module Main
+Compiling module Main_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 27 Verilog Units
+Built simulation executable E:/bigP/Framework/Main_test_isim_beh.exe
+Fuse Memory Usage: 32404 KB
+Fuse CPU Usage: 687 ms

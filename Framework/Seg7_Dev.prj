@@ -1,0 +1,7 @@
+verilog work "MUX4T1_4_sch.vf"
+verilog work "MUX8T1_8_sch.vf"
+verilog work "Seg_map.v"
+verilog work "ScanSync.vf"
+verilog work "MUX2T1_8.v"
+verilog work "MC14495.vf"
+verilog work "Seg7_Dev.vf"

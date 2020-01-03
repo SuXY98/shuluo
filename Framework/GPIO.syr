@@ -1,0 +1,392 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: GPIO.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "GPIO.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "GPIO"
+Output Format                      : NGC
+Target Device                      : xc7k160t-2L-ffg676
+
+---- Source Options
+Top Module Name                    : GPIO
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\Framework\LED_P2S_IO.v" into library work
+Parsing module <LED_P2S>.
+Analyzing Verilog file "E:\Framework\GPIO.v" into library work
+Parsing module <GPIO>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <GPIO>.
+
+Elaborating module <LED_P2S(DATA_BITS=16,DATA_COUNT_BITS=4)>.
+WARNING:HDLCompiler:1499 - "E:\Framework\LED_P2S_IO.v" Line 21: Empty module <LED_P2S(DATA_BITS=16,DATA_COUNT_BITS=4)> remains a black box.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <GPIO>.
+    Related source file is "E:\Framework\GPIO.v".
+    Found 32-bit register for signal <GPIOf0>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <GPIO> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1
+ 32-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <LED_P2S.ngc>.
+Loading core <LED_P2S> for timing and area information for instance <LED_P2S>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <GPIO> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block GPIO, actual ratio is 0.
+FlipFlop GPIOf0_15 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop GPIOf0_14 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop GPIOf0_13 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop GPIOf0_12 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop GPIOf0_11 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop GPIOf0_10 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop GPIOf0_9 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop GPIOf0_8 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop GPIOf0_7 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop GPIOf0_6 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop GPIOf0_5 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop GPIOf0_4 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop GPIOf0_3 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop GPIOf0_2 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop GPIOf0_1 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop GPIOf0_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 48
+ Flip-Flops                                            : 48
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : GPIO.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 51
+#      INV                         : 17
+#      LUT3                        : 5
+#      LUT4                        : 1
+#      LUT5                        : 6
+#      LUT6                        : 18
+#      MUXF7                       : 3
+#      VCC                         : 1
+# FlipFlops/Latches                : 74
+#      FD                          : 18
+#      FDC                         : 4
+#      FDCE                        : 4
+#      FDCE_1                      : 48
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 71
+#      IBUF                        : 35
+#      OBUF                        : 36
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k160tffg676-2l 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              42  out of  202800     0%  
+ Number of Slice LUTs:                   47  out of  101400     0%  
+    Number used as Logic:                47  out of  101400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     49
+   Number with an unused Flip Flop:       7  out of     49    14%  
+   Number with an unused LUT:             2  out of     49     4%  
+   Number of fully used LUT-FF pairs:    40  out of     49    81%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                          72
+ Number of bonded IOBs:                  72  out of    400    18%  
+    IOB Flip Flops/Latches:              32
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 74    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.579ns (Maximum Frequency: 387.807MHz)
+   Minimum input arrival time before clock: 1.267ns
+   Maximum output required time after clock: 0.609ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.579ns (frequency: 387.807MHz)
+  Total number of paths / destination ports: 281 / 29
+-------------------------------------------------------------------------
+Delay:               1.289ns (Levels of Logic = 3)
+  Source:            GPIOf0_15 (FF)
+  Destination:       LED_P2S/buffer_0 (FF)
+  Source Clock:      clk falling
+  Destination Clock: clk rising
+
+  Data Path: GPIOf0_15 to LED_P2S/buffer_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE_1:C->Q           1   0.240   0.339  GPIOf0_15 (GPIOf0_15)
+     INV:I->O              1   0.054   0.613  LED<0>1_INV_0 (LED<0>)
+     begin scope: 'LED_P2S:P_Data<0>'
+     LUT6:I0->O            1   0.043   0.000  buffer_0_rstpot (buffer_0_rstpot)
+     FD:D                     -0.000          buffer_0
+    ----------------------------------------
+    Total                      1.289ns (0.337ns logic, 0.952ns route)
+                                       (26.1% logic, 73.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 169 / 169
+-------------------------------------------------------------------------
+Offset:              1.267ns (Levels of Logic = 4)
+  Source:            rst (PAD)
+  Destination:       LED_P2S/buffer_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to LED_P2S/buffer_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            57   0.000   0.747  rst_IBUF (rst_IBUF)
+     begin scope: 'LED_P2S:rst'
+     LUT6:I0->O           16   0.043   0.433  _n0103_inv2 (_n0103_inv)
+     LUT6:I5->O            1   0.043   0.000  buffer_0_rstpot (buffer_0_rstpot)
+     FD:D                     -0.000          buffer_0
+    ----------------------------------------
+    Total                      1.267ns (0.086ns logic, 1.181ns route)
+                                       (6.8% logic, 93.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 35 / 35
+-------------------------------------------------------------------------
+Offset:              0.609ns (Levels of Logic = 2)
+  Source:            LED_P2S/s_clk (FF)
+  Destination:       led_clk (PAD)
+  Source Clock:      clk rising
+
+  Data Path: LED_P2S/s_clk to led_clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.236   0.373  s_clk (s_clk)
+     end scope: 'LED_P2S:s_clk'
+     OBUF:I->O                 0.000          led_clk_OBUF (led_clk)
+    ----------------------------------------
+    Total                      0.609ns (0.236ns logic, 0.373ns route)
+                                       (38.7% logic, 61.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.786|    1.289|         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.95 secs
+ 
+--> 
+
+Total memory usage is 4654608 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

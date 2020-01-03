@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "E:/Framework/Seg_map.xst" -ofn "E:/Framework/Seg_map.syr" 
+vhdtdtfi -lib work E:/Framework/Seg_map.v -lang verilog -prj Framework -o Seg_map.spl -module Seg_map -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Seg_map.spl E:/Framework/Seg_map.sym 

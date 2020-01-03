@@ -1,0 +1,11 @@
+[Inputs]
+reset
+clk
+stop
+[Outputs]
+=Time_out[15:0]=
+=s_point[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Wall_Clock
+

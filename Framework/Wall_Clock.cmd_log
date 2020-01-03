@@ -1,0 +1,4 @@
+vhdtdtfi -lib work E:/Framework/Wall_Clock.v -lang verilog -prj Framework -o Wall_Clock.spl -module Wall_Clock -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Wall_Clock.spl E:/Framework/Wall_Clock.sym 
+vhdtdtfi -lib work E:/Framework/Wall_Clock.v -lang verilog -prj Framework -o Wall_Clock.spl -module Wall_Clock -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Wall_Clock.spl E:/Framework/Wall_Clock.sym 
